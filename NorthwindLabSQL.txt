@@ -1,0 +1,55 @@
+--1
+--SELECT * FROM Customers;
+
+--2
+--SELECT Country FROM Customers;
+
+--3
+SELECT * FROM Customers
+WHERE CustomerID LIKE '%BL%';
+
+--4
+--SELECT TOP 100 * FROM Orders;
+--The SELECT TOP clause is used to specify the number of records to return. 
+--The SELECT TOP clause is useful on large tables with thousands of records.
+--Returning a large number of records can impact performance.
+--SQL TOP , LIMIT , FETCH FIRST or ROWNUM Clause
+
+--5
+--SELECT * FROM Customers
+--WHERE postalcode='1010' OR postalcode='3012' OR postalcode='12209' OR postalcode='05023';
+
+--6
+--SELECT * FROM Customers
+--WHERE Region <> 'NULL';
+
+--7
+--SELECT Country, City FROM Customers;
+
+--8
+--INSERT "Customers" VALUES('VIN','Vinh Dang Company','Vinh Dang','Sales Representative','Shelby Township','Shelby',NULL,'48823','United States','8108136668','030-04231')
+
+--9
+--UPDATE Orders
+--SET ShipRegion = 'EuroZone'
+--WHERE ShipCountry = 'France';
+
+--10
+--DELETE FROM [Order Details]
+--WHERE Quantity = 1;
+
+--11
+--SELECT CustomerID FROM Orders
+--WHERE OrderID = 10290;
+
+--12
+--SELECT * FROM Orders
+--INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID;
+
+--13
+--SELECT firstname from Employees
+--WHERE ReportsTo IS NULL;
+
+--14
+--SELECT firstname from Employees
+--WHERE ReportsTo = 2;
